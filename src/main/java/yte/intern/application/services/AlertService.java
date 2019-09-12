@@ -36,21 +36,9 @@ public class AlertService {
         alertRepository.deleteById(id);
     }
 
-    public Alert updateAlert(final Alert alert , final String name){
-        Alert alertFromDB = alertRepository.findByName(name);
-        if(alertFromDB != null){
-            Long id = alertFromDB.getId();
-            alert.setId(id);
-            return alertRepository.save(alert);
-        }
-        return null;
-    }
 
-    public List<Success> getById(Long id){
 
-        return alertRepository.getById(id);
 
-    }
 
 
 }

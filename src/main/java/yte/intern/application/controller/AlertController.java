@@ -49,10 +49,7 @@ public class AlertController {
         System.out.println("deleted");
     }
 
-    @PutMapping("/updateAlert")
-    public Alert updateAlert(@RequestBody final Alert alert , @RequestParam String name){
-        return alertService.updateAlert(alert , name);
-    }
+
 
 
 }

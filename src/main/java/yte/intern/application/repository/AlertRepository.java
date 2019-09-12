@@ -9,6 +9,6 @@ import java.util.List;
 public interface AlertRepository  extends JpaRepository<Alert, Long> {
     void deleteById(Long id);
     Alert findByName(String name);
-    List<Success> getById(Long id);
+
 
 }
